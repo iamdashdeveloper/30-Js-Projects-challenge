@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    background: linear-gradient(45deg, #251f1f, #13064e);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Calendar{
+    width: 250px;
+    height: 200px;
+    background: #fff;
+    display: flex;
+    border-radius: 15px;
+}
+.date{
+    align-self: flex-start;
+    width: 60%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 15px 0  0 15px;
+    text-align: center;
+    justify-content: center;
+
+}
+.date h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 72px;
+    line-height: 90px;
+}
+.month{
+    width: 40%;
+    height: 100%;
+    background: rgb(199, 56, 0);
+    border-radius: 0 15px  15px 0 ;   
+}
+.month h4{
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 70px;
+    font-weight: 300;
+}
+.month h4:nth-child(2){
+    margin-top: 10px;
+}
