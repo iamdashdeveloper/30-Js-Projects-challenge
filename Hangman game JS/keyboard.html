@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QWERTY Keyboard Layout</title>
+    <style>
+        .keyboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+        .keyboard-button {
+            width: calc(100% / 10 - 6px);
+            margin: 1px;
+            height: 50px; /* Adjust height as needed */
+            text-align: center;
+            line-height: 50px;
+            background-color: #ddd;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+        .row:nth-child(2) .keyboard-button {
+            width: calc(100% / 9 - 6px); /* Adjust for the staggered effect */
+        }
+        .row:nth-child(3) .keyboard-button {
+            width: calc(100% / 8 - 6px); /* Adjust for the staggered effect */
+        }
+        .row:nth-child(4) .keyboard-button {
+            width: calc(100% / 7 - 6px); /* Adjust for the staggered effect */
+        }
+        /* Add more rows as needed */
+    </style>
+</head>
+<body>
+    <div class="keyboard">
+        <div class="row">
+            <div class="keyboard-button">Q</div>
+            <div class="keyboard-button">W</div>
+            <div class="keyboard-button">E</div>
+            <div class="keyboard-button">R</div>
+            <div class="keyboard-button">T</div>
+            <div class="keyboard-button">Y</div>
+            <div class="keyboard-button">U</div>
+            <div class="keyboard-button">I</div>
+            <div class="keyboard-button">O</div>
+            <div class="keyboard-button">P</div>
+        </div>
+        <div class="row">
+            <div class="keyboard-button">A</div>
+            <div class="keyboard-button">S</div>
+            <div class="keyboard-button">D</div>
+            <div class="keyboard-button">F</div>
+            <div class="keyboard-button">G</div>
+            <div class="keyboard-button">H</div>
+            <div class="keyboard-button">J</div>
+            <div class="keyboard-button">K</div>
+            <div class="keyboard-button">L</div>
+        </div>
+        <div class="row">
+            <div class="keyboard-button">Z</div>
+            <div class="keyboard-button">X</div>
+            <div class="keyboard-button">C</div>
+            <div class="keyboard-button">V</div>
+            <div class="keyboard-button">B</div>
+            <div class="keyboard-button">N</div>
+            <div class="keyboard-button">M</div>
+        </div>
+    </div>
+</body>
+</html>
